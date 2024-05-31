@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+}
+p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 100px;
+}
+button{
+    margin-top: 50px;
+    margin-left: 600px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    
+}
+body{
+    background-image: url("./istockphoto-1420323259-1024x1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button:hover{
+    background-color: rgb(196, 193, 193);
+}

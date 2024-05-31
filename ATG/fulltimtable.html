@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/fulltimetable.css">
+</head>
+<body>
+
+    
+
+   
+    <div id="main">
+
+        <div id="navmode">
+            <nav id="nav1">
+                <a href="./welcome.html">HOME</a>
+            </nav>
+            <nav id="nav2">
+                <a href="./home.html">TYPE</a>
+            </nav>
+            <nav id="nav3"><a href="#filter">FILTER</a></nav>
+        </div>
+
+
+        <div id="count">
+
+            <!-- how many periods : <input type="number" id="period"> -->
+    
+            <p>HOW MANY TEACHERS :</p> <br> <center>
+                <input type="number" id="teach">
+            </center><br>
+    
+            <button id="next">next-></button>
+            
+        </div>
+    
+        <div id="value">
+    
+            
+        </div>
+    
+    
+        <div id="output">
+            <center>
+                <table id="outable1">
+                    <tr>
+                        <thead>
+                            <th>day\period</th>
+                            <th>1 (9-10)</th>
+                            <th>2 (10-11)</th>
+                            <th>3 (11-12)</th>
+                            <th>4 (1-2)</th>
+                            <th>5 (2-3)</th>
+                        </thead>
+                    </tr>
+                    <tr id="day11">
+                            
+                        
+                    </tr>
+                    <tr id="day12">
+                            
+                        
+                    </tr>
+                    <tr id="day13">
+                           
+                    </tr>
+                    <tr id="day14">
+                            
+                        
+                    </tr>
+                    <tr id="day15">
+                            
+                        
+                    </tr>
+                    <tr id="day16">
+                        
+                            
+                            
+                        
+                    </tr>
+    
+                </table>
+                <br><br>
+    
+                <table id="outable2">
+                    <tr>
+                        <thead>
+                            <th>day\period</th>
+                            <th>1 (9-10)</th>
+                            <th>2 (10-11)</th>
+                            <th>3 (11-12)</th>
+                            <th>4 (1-2)</th>
+                            <th>5 (2-3)</th>
+                        </thead>
+                    </tr>
+                    <tr id="day21">
+                            
+                        
+                    </tr>
+                    <tr id="day22">
+                            
+                        
+                    </tr>
+                    <tr id="day23">
+                           
+                    </tr>
+                    <tr id="day24">
+                            
+                        
+                    </tr>
+                    <tr id="day25">
+                            
+                        
+                    </tr>
+                    <tr id="day26">
+                        
+                            
+                            
+                        
+                    </tr>
+    
+                </table>
+                <br><br>
+    
+                <table id="outable3">
+                    <tr>
+                        <thead>
+                            <th>day\period</th>
+                            <th>1 (9-10)</th>
+                            <th>2 (10-11)</th>
+                            <th>3 (11-12)</th>
+                            <th>4 (1-2)</th>
+                            <th>5 (2-3)</th>
+                        </thead>
+                    </tr>
+                    <tr id="day31">
+                            
+                        
+                    </tr>
+                    <tr id="day32">
+                            
+                        
+                    </tr>
+                    <tr id="day33">
+                           
+                    </tr>
+                    <tr id="day34">
+                            
+                        
+                    </tr>
+                    <tr id="day35">
+                            
+                        
+                    </tr>
+                    <tr id="day36">
+                        
+                            
+                            
+                        
+                    </tr>
+    
+                </table>
+                <br><br>
+    
+                <table id="outable4">
+                    <tr>
+                        <thead>
+                            <th>day\period</th>
+                            <th>1 (9-10)</th>
+                            <th>2 (10-11)</th>
+                            <th>3 (11-12)</th>
+                            <th>4 (1-2)</th>
+                            <th>5 (2-3)</th>
+                        </thead>
+                    </tr>
+                    <tr id="day41">
+                            
+                        
+                    </tr>
+                    <tr id="day42">
+                            
+                        
+                    </tr>
+                    <tr id="day43">
+                           
+                    </tr>
+                    <tr id="day44">
+                            
+                        
+                    </tr>
+                    <tr id="day45">
+                            
+                        
+                    </tr>
+                    <tr id="day46">
+                        
+                            
+                            
+                        
+                    </tr>
+    
+                </table>
+            </center>
+
+           
+    
+    
+    
+        </div>
+
+        <div id="filter">
+
+            <label for="">WHOM TO FILTER:</label>
+            <input type="text" id="filinp">
+
+            <button id="proceed">PROCEED</button>
+
+            <div id="filter_table">
+                <center>
+
+
+                   <br><br>
+                   
+                   <!-- <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable1">
+        
+                        </tbody>
+        
+                    </table><br><br>
+        
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable2">
+        
+                        </tbody>
+                        
+                    </table><br><br>
+        
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable3">
+        
+                        </tbody>
+                    </table><br><br>
+        
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable4">
+                            
+                        </tbody>
+                    </table> -->
+                    
+
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable1">
+                            <tr>
+                                <td id="td1"></td>
+                                <td id="td2"></td>
+                                <td id="td3"></td>
+                                <td id="td4"></td>
+                                <td id="td5"></td>
+                                <td id="td6"></td>
+                            </tr>
+                            <tr>
+                                <td id="td7"></td>
+                                <td id="td8"></td>
+                                <td id="td9"></td>
+                                <td id="td10"></td>
+                                <td id="td11"></td>
+                                <td id="td12"></td>
+                            </tr>
+                            <tr>
+                                <td id="td13"></td>
+                                <td id="td14"></td>
+                                <td id="td15"></td>
+                                <td id="td16"></td>
+                                <td id="td17"></td>
+                                <td id="td18"></td>
+                            </tr>
+                            <tr>
+                                <td id="td19"></td>
+                                <td id="td20"></td>
+                                <td id="td21"></td>
+                                <td id="td22"></td>
+                                <td id="td23"></td>
+                                <td id="td24"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="td25"></td>
+                                <td id="td26"></td>
+                                <td id="td27"></td>
+                                <td id="td28"></td>
+                                <td id="td29"></td>
+                                <td id="td30"></td>
+                            </tr>
+                            <tr>
+                                <td id="td31"></td>
+                                <td id="td32"></td>
+                                <td id="td33"></td>
+                                <td id="td34"></td>
+                                <td id="td35"></td>
+                                <td id="td36"></td>
+                            </tr>
+        
+                        </tbody>
+        
+                    </table><br><br>
+        
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable2">
+        
+                            <tr>
+                                <td id="td37"></td>
+                                <td id="td38"></td>
+                                <td id="td39"></td>
+                                <td id="td40"></td>
+                                <td id="td41"></td>
+                                <td id="td42"></td>
+                            </tr>
+                            <tr>
+                                <td id="td43"></td>
+                                <td id="td44"></td>
+                                <td id="td45"></td>
+                                <td id="td46"></td>
+                                <td id="td47"></td>
+                                <td id="td48"></td>
+                            </tr>
+                            <tr>
+                                <td id="td49"></td>
+                                <td id="td50"></td>
+                                <td id="td51"></td>
+                                <td id="td52"></td>
+                                <td id="td53"></td>
+                                <td id="td54"></td>
+                            </tr>
+                            <tr>
+                                <td id="td55"></td>
+                                <td id="td56"></td>
+                                <td id="td57"></td>
+                                <td id="td58"></td>
+                                <td id="td59"></td>
+                                <td id="td60"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="td61"></td>
+                                <td id="td62"></td>
+                                <td id="td63"></td>
+                                <td id="td64"></td>
+                                <td id="td65"></td>
+                                <td id="td66"></td>
+                            </tr>
+                            <tr>
+                                <td id="td67"></td>
+                                <td id="td68"></td>
+                                <td id="td69"></td>
+                                <td id="td70"></td>
+                                <td id="td71"></td>
+                                <td id="td72"></td>
+                            </tr>
+
+
+                        </tbody>
+                        
+                    </table><br><br>
+        
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable3">
+        
+                            <tr>
+                                <td id="td73"></td>
+                                <td id="td74"></td>
+                                <td id="td75"></td>
+                                <td id="td76"></td>
+                                <td id="td77"></td>
+                                <td id="td78"></td>
+                            </tr>
+                            <tr>
+                                <td id="td79"></td>
+                                <td id="td80"></td>
+                                <td id="td81"></td>
+                                <td id="td82"></td>
+                                <td id="td83"></td>
+                                <td id="td84"></td>
+                            </tr>
+                            <tr>
+                                <td id="td85"></td>
+                                <td id="td86"></td>
+                                <td id="td87"></td>
+                                <td id="td88"></td>
+                                <td id="td89"></td>
+                                <td id="td90"></td>
+                            </tr>
+                            <tr>
+                                <td id="td91"></td>
+                                <td id="td92"></td>
+                                <td id="td93"></td>
+                                <td id="td94"></td>
+                                <td id="td95"></td>
+                                <td id="td96"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="td97"></td>
+                                <td id="td98"></td>
+                                <td id="td99"></td>
+                                <td id="td100"></td>
+                                <td id="td101"></td>
+                                <td id="td102"></td>
+                            </tr>
+                            <tr>
+                                <td id="td103"></td>
+                                <td id="td104"></td>
+                                <td id="td105"></td>
+                                <td id="td106"></td>
+                                <td id="td107"></td>
+                                <td id="td108"></td>
+                            </tr>
+
+                        </tbody>
+                    </table><br><br>
+        
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>day\period</th>
+                                <th>1 (9-10)</th>
+                                <th>2 (10-11)</th>
+                                <th>3 (11-12)</th>
+                                <th>4 (1-2)</th>
+                                <th>5 (2-3)</th>
+                            </thead>
+                        </tr>
+                        <tbody id="filtable4">
+                            
+                            <tr>
+                                <td id="td109"></td>
+                                <td id="td110"></td>
+                                <td id="td111"></td>
+                                <td id="td112"></td>
+                                <td id="td113"></td>
+                                <td id="td114"></td>
+                            </tr>
+                            <tr>
+                                <td id="td115"></td>
+                                <td id="td116"></td>
+                                <td id="td117"></td>
+                                <td id="td118"></td>
+                                <td id="td119"></td>
+                                <td id="td120"></td>
+                            </tr>
+                            <tr>
+                                <td id="td121"></td>
+                                <td id="td122"></td>
+                                <td id="td123"></td>
+                                <td id="td124"></td>
+                                <td id="td125"></td>
+                                <td id="td126"></td>
+                            </tr>
+                            <tr>
+                                <td id="td127"></td>
+                                <td id="td128"></td>
+                                <td id="td129"></td>
+                                <td id="td130"></td>
+                                <td id="td131"></td>
+                                <td id="td132"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="td133"></td>
+                                <td id="td134"></td>
+                                <td id="td135"></td>
+                                <td id="td136"></td>
+                                <td id="td137"></td>
+                                <td id="td138"></td>
+                            </tr>
+                            <tr>
+                                <td id="td139"></td>
+                                <td id="td140"></td>
+                                <td id="td141"></td>
+                                <td id="td142"></td>
+                                <td id="td143"></td>
+                                <td id="td144"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+                    <br><br>
+
+
+                </center>
+            </div>
+
+
+            <button id="fil">reset</button>
+
+            
+
+            
+
+        </div>
+
+
+
+    </div>
+
+    
+    
+
+
+    <script src="/fulltimetable.js"></script>
+
+
+</body>
+</html>
